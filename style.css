@@ -1,0 +1,56 @@
+
+.brand-name {
+    color: orangered !important;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.brand-name2 {
+    color: orangered !important;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#ef-logo {
+    display: flex;
+}
+
+#brand-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+.stats {
+    font-size: 14px !Important;
+}
+
+#video-wrap {
+    display: flex;
+}
+
+
+
+.list-group{
+    margin-top: 50px;    
+    display: flex;
+    padding:10px;
+    
+}
+
