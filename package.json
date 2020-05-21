@@ -1,0 +1,19 @@
+{
+  "name": "errandfolks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darh0ky/errandfolks.git"
+  },
+  "author": "JAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darh0ky/errandfolks/issues"
+  },
+  "homepage": "https://github.com/darh0ky/errandfolks#readme"
+}
