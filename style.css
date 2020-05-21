@@ -54,3 +54,16 @@
     
 }
 
+.container {
+    padding: 2px;
+}
+.footer {
+    flex-shrink: 0;
+    height: 90px;
+    background-color: whitesmoke;
+  }
+
+  #map1 {
+      height: 100%;
+      width: 100%;
+  }
