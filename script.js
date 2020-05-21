@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	  
 	  $.ajax({
-		url: 'http://covidtracking.com/api/us',
+		url: 'https://covidtracking.com/api/us',
 		dataType: 'json',
 		success: function(data) {
 		  console.log(data);
