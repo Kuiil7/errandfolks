@@ -11,15 +11,21 @@
     color: orangered !important;
     font-weight: bold;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 
 
 }
 
+.text-align {
+    text-align: left;
+}
 
 
 #ef-logo {
     display: flex;
+}
+.fas { 
+    font-family: 'FontAwesome' !important; 
 }
 
 #brand-wrap {
@@ -48,7 +54,9 @@
 }
 
 
-
+.group1 {
+    width: 500px;
+}
 .list-group{
     margin-top: 10px;    
     display: flex;
@@ -69,3 +77,26 @@
       height: 100%;
       width: 100%;
   }
+
+  #support {
+      width: 100%;
+      height: 120px;
+      background-color: whitesmoke;
+  
+  }
+#aboutusP {
+    display: flex;
+    text-align: left;
+    margin: 35px;
+}
+
+#covid {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
