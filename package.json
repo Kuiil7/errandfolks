@@ -1,8 +1,8 @@
 {
   "name": "errandfolks",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Connecting deaf users with volunteers re COVID-19",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/darh0ky/errandfolks.git"
   },
+  "keywords": [
+    "Deaf",
+    "Seniors"
+  ],
   "author": "JAM",
   "license": "ISC",
   "bugs": {
