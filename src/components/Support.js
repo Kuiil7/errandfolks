@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 
 
 export default class Support extends Component {
@@ -41,7 +42,7 @@ Support and Volunteer
 
     <h4>	Frequent Asked Questions</h4>
 
-  <p>Many of us are afraid and cannot go out to shop for food. Don’t worry because you can contact Errand Folks with 65+ volunteers all over the United States and they’re happy to help!
+  <p>Many of us are afraid and cannot go out to shop for food. Don't worry because you can contact Errand Folks with 65+ volunteers all over the United States and they're happy to help!
 						</p>
 
 
@@ -53,15 +54,23 @@ Support and Volunteer
 					<a class="btn btn-block  btn-primary" href="#faq" role="button">FAQs</a>
 
 
-			<img src="assets/img/ef_locations.jpg" />
+			<img src="assets/img/ef_locations.jpg" alt="us map locations " />
 
   </div>
 </div>
+<div >
+        <Link className="button is-primary is-active" to="/about">About</Link>
+        <Link className="button is-light"  to="/services">Services</Link>
+        <Link className="button is-light" to="/support">Support | Volunteer</Link>
+        <Link className="button is-light"  to="/contact">Contact</Link>
+        <Link className="button is-light"  to="/FAQ">FAQ</Link>
 
+        </div>
 
 
      </div>
     );
   }
 }
+
 

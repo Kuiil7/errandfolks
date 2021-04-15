@@ -1,48 +1,95 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Footer from '../components/Footer'
+import React from "react";
+import {Route, Link,Switch, NavLink,HashRouter} from "react-router-dom";
 
 import ef_logo_crop from '../assets/images/ef_logo_crop.png'
 
- const Navigation = () => (
+import Home from '../components/Home'
 
-  <div className="container  ">
-  <nav className="navbar " role="navigation" aria-label="main navigation">
-  <div className="navbar-brand">
+import About from '../components/About'
 
-    <a role="button" className="navbar-burger" href="#/" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+import Support from '../components/Support'
 
-  <div id="navbarBasicExample" className="navbar-menu">
-    <div className="navbar-start">
+import Services from '../components/Services'
 
-    <Link className="navbar-item is-primary " to="/"> ErrandFolks
-    <img alt="logo" height="30px;" id="ef-logo" src={ef_logo_crop} width="50px;" />
-    </Link>
+
+import Contact from '../components/Contact'
+
+import FAQ from '../components/FAQ'
+
+import '../index.css';
+
+
+function Navigation () {
+  const [isActive, setisActive] = React.useState(false)
+
+return (
+  <HashRouter basename={process.env.PUBLIC_URL}>
+
+<header>
+<nav className="navbar is-fixed-top  " role="navigation" aria-label="main navigation">
+  <div className="container">
+
+
+<div className="navbar-brand ">
+<NavLink className="navbar-item"  to="/">
+<img alt="logo" height="30px;"  src={ef_logo_crop} width="50px;" />
+
+</NavLink>
+<div
+     onClick={() => {
+        setisActive(!isActive)
+      }}
+      role='button'
+      className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
+      aria-label='menu'
+      aria-expanded='false'
+    >
+      <span aria-hidden='true'></span>
+      <span aria-hidden='true'></span>
+      <span aria-hidden='true'></span>
     </div>
+</div>
 
-    <div className="navbar-end">
-      <div className="navbar-item">
-        <div className="buttons">
-        <Link className="button is-primary" to="/about">About</Link>
-        <Link className="button is-light"  to="/services">Services</Link>
-        <Link className="button is-light" to="/support">Support | Volunteer</Link>
-        <Link className="button is-light"  to="/contact">Contact</Link>
-        <Link className="button is-light"  to="/FAQ">FAQ</Link>
+<div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+<div className='navbar-end '>
 
-        </div>
+  <div className='navbar-item '>
+  <NavLink className="navbar-item"
+to="/"> Home </NavLink>
+
+
+<NavLink className="navbar-item"
+to="/contact"> Contact </NavLink>
+
+<NavLink className="navbar-item"
+to="/FAQ"> FAQ </NavLink>
+
 
       </div>
     </div>
   </div>
+  </div>
 </nav>
 
-  </div>
+</header>
 
-)
 
-export default Navigation
+<div >
+<Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+
+        <Route path="/support" component={Support} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={FAQ} />
+      </Switch>
+    </div>
+
+</HashRouter>
+
+  );
+
+}
+
+export default Navigation;

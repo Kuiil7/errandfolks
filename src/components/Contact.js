@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import Footer from './Footer'
 
 export default class Contact extends Component {
 
@@ -18,21 +19,21 @@ export default class Contact extends Component {
 
 
 <div className="columns">
-  <div className="column is-12">
-  <section className="hero is-small ">
-  <div className="hero-body">
-    <p className="title">
+  <div className="column is-12 mt-6 has-text-centered">
 
-    Errand Folks, how?
+<section class="hero is-large is-primary">
+  <div class="hero-body">
+    <p class="title">
+    Contact Us
     </p>
-    <p className="subtitle">
-    Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health’s safety guidelines while volunteering.    </p>
+    <p class="subtitle">
+    <a class="disable-link" href="info@errandfolks.com">Info@errandfolks.com</a>
+    </p>
   </div>
 </section>
 </div>
 
 </div>
-
 
 
 

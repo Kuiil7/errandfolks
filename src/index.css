@@ -6,9 +6,12 @@ body {
     position:relative;
     padding-bottom:[footer-height]
 }
-.footer {
-    position: absolute;
-    left: 0 ; right: 0; bottom: 0;
-    background-color: gray;
 
-}
+
+
+.custom-nav a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em;
+  }

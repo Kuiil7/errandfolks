@@ -22,16 +22,15 @@ export default class About extends Component {
   <div className="hero-body">
     <p className="title">
 
- FAQs
+About
     </p>
     <p className="subtitle">
-    Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health’s safety guidelines while volunteering.    </p>
+    Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health's safety guidelines while volunteering.    </p>
   </div>
 </section>
 </div>
 
 </div>
-
 
 
 

@@ -17,7 +17,7 @@ export default class Footer extends Component {
      <div className="container">
 
 
-<div className="columns">
+<div className="columns" >
   <div className="column is-12">
   <footer className="footer">
   <div className="content has-text-centered">

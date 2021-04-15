@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 
-import ef_logo_crop from '../assets/images/ef_logo_crop.png'
+import Video from './Video'
+import Footer from './Footer'
+import '../Footer.css';
+
+import ef_shopping from '../assets/images/ef_shopping.PNG'
+
+import ef_map2 from '../assets/images/ef_map2.PNG'
 
 export default class Home extends Component {
 
@@ -11,12 +17,14 @@ export default class Home extends Component {
 
 
     return (
-      <div className="container has-background-primary-light">
-<div className="columns-reverse">
-  <div className="column is-12">
+      <div className="container  " >
+
+
+<div className="columns-reverse mt-6">
+  <div className="column is-12 has-background-primary-light">
     <section className="hero is-small ">
-  <div className="hero-body">
-    <p className="title">
+  <div className="hero-body ">
+    <p className="title ">
 
    ErrandFolks
 
@@ -27,14 +35,92 @@ export default class Home extends Component {
   </div>
 </section>
 </div>
-<div class="flex-grow-1 embed-responsive embed-responsive-16by9">
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseektheworld2015%2Fvideos%2F1106083129773207%2F&show_text=0&" width="100%" height="600px"  scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" title="erranfolks">
 
-</iframe>
-				</div>
+
+
+
+<div class="columns">
+  <div class="column ">
+
+
+
+<Video />
+    </div>
+
+
+</div>
+<div class="columns">
+  <div class="column is-two-fifths">
+
+<article class="message is-primary">
+  <div class="message-header">
+    <p>About</p>
+
+  </div>
+  <div class="message-body">
+  Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health's safety guidelines while volunteering.
+  </div>
+</article>
+
+
+
+
+</div>
+  <div class="column">
+
+<article class="message is-primary">
+  <div class="message-header">
+    <p>    Errand Folks, how?</p>
+
+  </div>
+  <div class="message-body">
+  Our ultimate goal is to keep this simple and sweet for all of you! First, you will need to send an email to <strong><a href="info@ErrandFolks.com">info@ErrandFolks.com</a></strong> that you need support.
+       We will respond with a few questions (your location/what you need/where we find them/when need it) Then we will send out confidential information to our folks in your location to see who is available to help you. When we have an ErrandFolk ready to support you, they will be connected with you to work together to get your errands done.
+  </div>
+</article>
+  </div>
+
 </div>
 
+
+
+
+
+
+</div>
+
+
+<div class="columns">
+  <div class="column ">
+  <p class="title has-text-centered">
+    Grocery Shopping
+    </p>
+  <figure class="image ">
+  <img src={ef_shopping} alt="lady pushing cart in food aisle"/>
+</figure>
+
+<center>
+<a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">E-mail us!</a>
+</center>
+
+  </div>
+  <div class="column">
+  <p class="title has-text-centered">
+   Volunteer and Support
+    </p>
+  <figure class="image ">
+  <img src={ef_map2} alt="us map of errandfolks locations" />
+</figure>
+
+<center>
+<a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">Request Support</a>
+</center>
+
+  </div>
+</div>
+
+<Footer />
       </div>
     )
   }
