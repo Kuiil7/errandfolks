@@ -13,21 +13,35 @@ export default class About extends Component {
 
     return (
 
-     <div className="container">
+     <div >
 
 
 <div className="columns">
   <div className="column is-12">
-  <section className="hero is-small ">
-  <div className="hero-body">
-    <p className="title">
 
-About
-    </p>
-    <p className="subtitle">
-    Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health's safety guidelines while volunteering.    </p>
+
+  <section class="hero is-primary is-fullheight">
+  <div class="hero-head">
+
   </div>
+
+  <div class="hero-body">
+    <div class="container ">
+      <p class="title">
+        About Us
+      </p>
+      <p class="subtitle">
+      Volunteers can safely help their communities by following this guide developed in accordance with your home state's Department of Public Health's safety guidelines while volunteering.
+
+      </p>
+    </div>
+  </div>
+
+
+
 </section>
+
+
 </div>
 
 </div>

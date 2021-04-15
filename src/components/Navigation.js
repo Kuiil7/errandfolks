@@ -57,9 +57,15 @@ return (
   <NavLink className="navbar-item"
 to="/"> Home </NavLink>
 
+<NavLink className="navbar-item"
+to="/About"> About </NavLink>
 
 <NavLink className="navbar-item"
 to="/contact"> Contact </NavLink>
+
+<NavLink className="navbar-item"
+to="/support"> Support </NavLink>
+
 
 <NavLink className="navbar-item"
 to="/FAQ"> FAQ </NavLink>

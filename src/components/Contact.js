@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Footer from './Footer'
 
 export default class Contact extends Component {
 
@@ -14,23 +13,33 @@ export default class Contact extends Component {
 
     return (
 
-     <div className="container">
+     <div >
 
 
 
-<div className="columns">
-  <div className="column is-12 mt-6 has-text-centered">
+<div className="columns ">
+  <div className="column mt-6 ">
+  <section class="hero is-primary is-fullheight">
+  <div class="hero-head">
 
-<section class="hero is-large is-primary">
-  <div class="hero-body">
-    <p class="title">
-    Contact Us
-    </p>
-    <p class="subtitle">
-    <a class="disable-link" href="info@errandfolks.com">Info@errandfolks.com</a>
-    </p>
   </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        Contact Us
+      </p>
+      <p class="subtitle">
+      <a class="disable-link " href="info@errandfolks.com"> Info@errandfolks.com </a>
+
+      </p>
+    </div>
+  </div>
+
+
+
 </section>
+
 </div>
 
 </div>

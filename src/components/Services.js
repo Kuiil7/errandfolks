@@ -13,7 +13,7 @@ export default class Services extends Component {
 
     return (
 
-     <div className="container">
+     <div>
 
 
 
