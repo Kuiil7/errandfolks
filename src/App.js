@@ -1,18 +1,19 @@
 import React from 'react'
-import './App.css';
+import './App.scss';
 
 
 import Navigation from './components/Navigation'
 
 
 
+import Footer from './components/Footer'
 
 
 const App = () => (
-  <div>
+  <div >
     <Navigation />
 
-
+    <Footer />
   </div>
 )
 

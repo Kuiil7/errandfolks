@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 
 import Video from './Video'
-import Footer from './Footer'
-import '../Footer.css';
+//import Footer from './Footer'
 
 import ef_shopping from '../assets/images/ef_shopping.PNG'
 
 import ef_map2 from '../assets/images/ef_map2.PNG'
+
+import '../App.scss';
+
+
+
+
+
 
 export default class Home extends Component {
 
@@ -21,68 +27,69 @@ export default class Home extends Component {
 
 
 <div className="columns-reverse mt-6">
-  <div className="column is-12 has-background-danger-light">
-    <section className="hero is-small ">
-  <div className="hero-body ">
-    <p className="title ">
+
+<section className="hero is-small ">
+  <div className="hero-body " style={{backgroundColor:"#E65100"}}>
+    <p className="title has-text-white ">
 
    ErrandFolks
 
     </p>
-    <p className="subtitle">
+    <p className="subtitle has-text-white">
     ErrandFolks provides volunteers to support deaf elders and deaf people who are immunocompromised with grocery shopping and errands during COVID-19 2020 pandemic.
     </p>
   </div>
 </section>
-</div>
 
 
-
-
-
-<div class="columns">
-  <div class="column ">
-
-
-
+<div className="columns">
+  <div className="column ">
 <Video />
     </div>
-
-
+</div>
 </div>
 
 
 
+<div className="columns">
 
+  <div className="column ">
 
+<article className="message is-large"   >
 
-</div>
+  <div className="message-header"  style={{backgroundColor:"#E65100"}}>
+    <p> Grocery Shopping</p>
+  </div>
+  <div className="message-body">
 
-
-<div class="columns">
-  <div class="column is-primary">
-
-
-
-  <p class="title has-text-centered message-header ">
-    Grocery Shopping
-    </p>
-  <figure class="image ">
+  <figure className="image ">
   <img src={ef_shopping} alt="lady pushing cart in food aisle"/>
 </figure>
-
 <center>
 <a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">E-mail us!</a>
 </center>
+  </div>
+</article>
 
   </div>
-  <div class="column">
-  <p class="title has-text-centered message-header">
-   Volunteer and Support
-    </p>
-  <figure class="image ">
+
+
+
+  <div className="column">
+
+  <article className="message is-large" >
+  <div className="message-header" style={{backgroundColor:"#E65100"}}>
+    <p> Volunteer and Support</p>
+  </div>
+  <div className="message-body">
+
+  <figure className="image ">
   <img src={ef_map2} alt="us map of errandfolks locations" />
 </figure>
+
+  </div>
+
+</article>
 
 <center>
 <a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">Request Support</a>
@@ -91,7 +98,7 @@ export default class Home extends Component {
   </div>
 </div>
 
-<Footer />
+
       </div>
     )
   }

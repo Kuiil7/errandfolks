@@ -11,17 +11,19 @@ export default class FAQ extends Component {
      <div className="container">
 
 
+
+
+
 <div className="columns mt-4 ">
-  <div className="column is-12 mt-6">
 
-
-    <p className="title">
- FAQs
+  <div className="column is-fullwidth mt-6">
+  <p class="title is-size-2">
+     Frequently Asked Questions
     </p>
 
 
-     <article class="message is-primary">
-  <div class="message-header">
+     <article class="message  is-size-4" >
+  <div class="message-header" style={{backgroundColor:"#E65100"}}>
     <p> <strong>What is ErrandFolks? </strong></p>
   </div>
   <div class="message-body">
@@ -31,8 +33,8 @@ export default class FAQ extends Component {
 
 
 
-     <article class="message is-primary">
-  <div class="message-header">
+     <article class="message is-size-4">
+  <div class="message-header" style={{backgroundColor:"#E65100"}}>
     <p>   <strong>How does ErrandFolks work?</strong>
 </p>
   </div>
@@ -42,8 +44,8 @@ export default class FAQ extends Component {
 </article>
 
 
-  <article class="message is-primary">
-  <div class="message-header">
+  <article class="message is-size-4 ">
+  <div class="message-header" style={{backgroundColor:"#E65100"}} >
     <p>   <strong>How does the payment work?</strong>
 
 </p>
@@ -55,12 +57,12 @@ export default class FAQ extends Component {
 
 
 
-  <article class="message is-primary">
-  <div class="message-header">
+  <article className="message is-size-4 ">
+  <div className="message-header" style={{backgroundColor:"#E65100"}}>
     <p>     <strong>Do I have to pay for the service?</strong>
 </p>
   </div>
-  <div class="message-body">
+  <div className="message-body">
   No! It is 100% volunteer based service which means the volunteers are doing this for free. However, tips would be appreciated to cover expenses for gas.
   </div>
 </article>
@@ -70,13 +72,13 @@ export default class FAQ extends Component {
 
 
 
-<article class="message is-primary">
-  <div class="message-header">
+<article className="message is-size-4 ">
+  <div className="message-header" style={{backgroundColor:"#E65100"}}>
     <p>     <strong>How can I become a volunteer?</strong>
 
 </p>
   </div>
-  <div class="message-body">
+  <div className="message-body">
   I'm happy to know that you want to become a volunteer! It is simple and sweet, please send an email to <a href="info@ErrandFolks.com">info@ErrandFolks.com</a>  showing your interest to become a "folk" and we will be sending you a few questions form and have you filled it out. As soon as you filled out the form, we will need you to send us a video of you signing, "Hello! My name is (first/last). I'm here to support you in (location)". Highly encouraged you to wear a deaf owned business shirt to show them your support!
   </div>
 </article>
@@ -91,7 +93,6 @@ export default class FAQ extends Component {
 </div>
 
 </div>
-
 
 
 

@@ -19,18 +19,18 @@ export default class Contact extends Component {
 
 <div className="columns ">
   <div className="column mt-6 ">
-  <section class="hero is-primary is-fullheight">
-  <div class="hero-head">
+  <section className="hero is-primary is-fullheight">
+  <div className="hero-head">
 
   </div>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">
+  <div className="hero-body">
+    <div className="container has-text-centered">
+      <p className="title is-size-1">
         Contact Us
       </p>
-      <p class="subtitle">
-      <a class="disable-link " href="info@errandfolks.com"> Info@errandfolks.com </a>
+      <p className="subtitle is-size-4">
+      <a className="disable-link " href="info@errandfolks.com"> Info@errandfolks.com </a>
 
       </p>
     </div>

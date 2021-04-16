@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Link,Switch, NavLink,HashRouter} from "react-router-dom";
+import {Route,Switch, NavLink,HashRouter} from "react-router-dom";
 
 import ef_logo_crop from '../assets/images/ef_logo_crop.png'
 
@@ -16,7 +16,6 @@ import Contact from '../components/Contact'
 
 import FAQ from '../components/FAQ'
 
-import '../index.css';
 
 
 function Navigation () {
