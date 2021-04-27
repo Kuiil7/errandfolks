@@ -55,9 +55,9 @@ export default class Home extends Component {
 
   <div className="column ">
 
-<article className="message is-large"   >
+<article className="message is-large pb-2"   >
 
-  <div className="message-header"  style={{backgroundColor:"#E65100"}}>
+  <div className="message-header "  style={{backgroundColor:"#E65100"}}>
     <p> Grocery Shopping</p>
   </div>
   <div className="message-body">
@@ -65,10 +65,11 @@ export default class Home extends Component {
   <figure className="image ">
   <img src={ef_shopping} alt="lady pushing cart in food aisle"/>
 </figure>
-<center>
+
+  </div>
+  <center>
 <a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">E-mail us!</a>
 </center>
-  </div>
 </article>
 
   </div>
@@ -77,7 +78,7 @@ export default class Home extends Component {
 
   <div className="column">
 
-  <article className="message is-large" >
+  <article className="message is-large pb-2" >
   <div className="message-header" style={{backgroundColor:"#E65100"}}>
     <p> Volunteer and Support</p>
   </div>
@@ -88,12 +89,12 @@ export default class Home extends Component {
 </figure>
 
   </div>
-
-</article>
-
-<center>
+  <center>
 <a className="button mt-2 is-pill is-primary " href="mailto:info@errandfolks.com">Request Support</a>
 </center>
+</article>
+
+
 
   </div>
 </div>
